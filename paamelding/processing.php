@@ -1,3 +1,29 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:c2b740b2c96e9751909d4e70eed0d4764c0af82c57fb2bc3bfbd8699c28f8b17
-size 660
+<?php
+$servername = "localhost";
+$username = "root";
+$password = "";
+$dbname = "russ";
+
+// Create connection
+$conn = new mysqli($servername, $username, $password, $dbname);
+// Check connection
+if ($conn->connect_error) {
+  die("Connection failed: " . $conn->connect_error);
+}
+
+$fornavn = $_POST['fornavn'];
+$etternavn = $_POST['etternavn'];
+$epost = $_POST['epost'];
+$tlf = $_POST['tlf'];
+
+$sql = "INSERT INTO personer (fornavn, etternavn, epost, tlf)
+VALUES ('$fornavn', '$etternavn', '$epost', '$tlf')";
+
+if ($conn->query($sql) === TRUE) {
+    header("Location: success.html");
+} else {
+  echo "Error: " . $sql . "<br>" . $conn->error;
+}
+
+$conn->close();
+?> 

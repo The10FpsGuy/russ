@@ -1,3 +1,32 @@
-version https://git-lfs.github.com/spec/v1
-oid sha256:37a5b7c4243c0fafb4bd6ab2e2456d7089a47c65e7574269bc01d40f729d4598
-size 1072
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PÃ¥melding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <h2>PÃ¥melding</h2>
+        <form action="processing.php" method="POST">
+          <div class="input-box">
+            <input name="fornavn" type="text" placeholder="Fornavn" required>
+          </div>
+          <div class="input-box">
+            <input name="etternavn" type="text" placeholder="Etternavn" required>
+          </div>
+          <div class="input-box">
+            <input name="epost" type="text" placeholder="Epost" required>
+          </div>
+          <div class="input-box">
+            <input name="tlf" type="text" placeholder="Telefonnummer" required>
+          </div>
+          <div class="input-box button">
+            <input type="Submit" value="Meld deg på">
+          </div>
+        </form>
+      </div>
+</body>
+</html>

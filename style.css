@@ -6,23 +6,41 @@
 }
 
 .container {
-    color: white;
-    margin: auto;
-    padding: 80px 40px;
+    color: rgb(255, 255, 255);
     font-family: 'Source Sans Pro', sans-serif;
-    font-size: 3vw;
+    font-size: 1.7vw;
+    margin-top: 200px;
+    display: flex;
+    justify-content: center;
 }
 
 #overskrift {
     font-family: 'Roboto Slab', serif;
-    font-size: 5vw;
+    font-size: 3vw;
     padding: 0 0 50px 0;
 }
 
 .intro {
     text-align: center;
     position: fixed;
+    background-color: rgba(120, 120, 120, 0.895);
+    border-radius: 50px;
+    width: 70%;
+    padding: 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
+.video_container {
+    overflow: hidden;
+    display: flex;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+}
+
 
 #video {
     position: fixed;
@@ -30,12 +48,27 @@
     bottom: 0;
     min-width: 100%;
     min-height: 100%;
+    transform: translate(-50%, -50%);
+    top: 50%;
+    left: 50%;
+    width: auto;
+    height: auto;
   }
 
 a {
     color: white;
 }
 
-#info {
-    margin-top: 600px;
+@media only screen and (max-width: 700px) {
+    .intro {
+        height: fit-content;
+        font-size: 4vw;
+    }
+    #overskrift {
+        font-size: 7vw;
+    }
+    #video {
+        position: fixed;
+
+      }
 }

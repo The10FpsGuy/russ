@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Source+Sans+Pro&display=swap');
+html {
+    background-image: url(bilder/fest.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+* {
+    margin: 0;
+    padding: 0;
+
+}
+
+.container {
+    width: 80%;
+    color: white;
+    margin: auto;
+    padding: 80px 40px;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 3vw;
+}
+
+#overskrift {
+    font-family: 'Roboto Slab', serif;
+    font-size: 5vw;
+    padding: 0 0 50px 0;
+}
+
+.intro {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}

@@ -3,6 +3,7 @@ html {
     background-image: url(../bilder/fest.jpg);
     background-size: cover;
     background-repeat: no-repeat;
+    color: white;
 }
 * {
     margin: 0;
@@ -101,4 +102,20 @@ form .text h3 a{
 }
 form .text h3 a:hover{
   text-decoration: underline;
+}
+
+.suksess {
+    font-size: 2.5vw;
+    text-align: center;
+    width: 50%;
+    margin: auto;
+}
+
+#btekst{
+    margin: 40px 0 0 0;
+    font-size: 2vw;
+}
+
+#vipps{
+    padding: 8% 0 0 0;
 }

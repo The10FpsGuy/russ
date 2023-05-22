@@ -1,9 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&family=Source+Sans+Pro&display=swap');
-html {
-    background-image: url(bilder/fest.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-}
 * {
     margin: 0;
     padding: 0;
@@ -11,7 +6,7 @@ html {
 }
 
 .container {
-        color: white;
+    color: white;
     margin: auto;
     padding: 80px 40px;
     font-family: 'Source Sans Pro', sans-serif;
@@ -39,4 +34,8 @@ html {
 
 a {
     color: white;
+}
+
+#info {
+    margin-top: 600px;
 }

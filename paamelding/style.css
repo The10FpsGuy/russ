@@ -19,7 +19,7 @@ html {
 }
 body{
   min-height: 100vh;
-  display: flex;
+  /* display: flex; */
   align-items: center;
   justify-content: center;
 }
@@ -116,6 +116,30 @@ form .text h3 a:hover{
     font-size: 2vw;
 }
 
-#vipps{
+.image-container{
     padding: 8% 0 0 0;
+    display: none;
 }
+
+
+#bsod {
+  display: none;
+  font:300 16px/1em 'Open Sans', sans-serif;margin:0;background:#0827F5;cursor:none;overflow:hidden;
+  user-select:none;
+  -webkit-user-select:none;
+  -moz-user-select:none;
+  -ms-user-select:none;
+  width: 100%;
+  height: max-content;
+  padding: 100px;
+}
+
+.omg{font-size:9.5em;line-height:1.35em;margin-left:-.4rem;}
+.omg p{margin:0;font-size:1.7em;line-height:1.6em;max-width:800px;}
+.bottom_line{font-size:.8em;margin-top:40px}
+
+:-webkit-full-screen {color:rgba(0,0,0,0)}
+:-moz-full-screen {color:rgba(0,0,0,0)}
+:-ms-fullscreen {color:rgba(0,0,0,0)}
+:full-screen {color:rgba(0,0,0,0)}
+:fullscreen {color:rgba(0,0,0,0)}

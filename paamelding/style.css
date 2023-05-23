@@ -31,6 +31,10 @@ body{
   padding: 34px;
   border-radius: 6px;
   box-shadow: 0 5px 10px rgba(0,0,0,0.2);
+  margin: auto;
+  top: 50%;
+  -ms-transform: translateY(50%);
+  transform: translateY(50%);
 }
 .wrapper h2{
   position: relative;
@@ -124,7 +128,7 @@ form .text h3 a:hover{
 
 #bsod {
   display: none;
-  font:300 16px/1em 'Open Sans', sans-serif;margin:0;background:#0827F5;cursor:none;overflow:hidden;
+  font:300 16px/1em 'Open Sans', sans-serif;margin:0;background:#0078d7;cursor:none;overflow:hidden;
   user-select:none;
   -webkit-user-select:none;
   -moz-user-select:none;

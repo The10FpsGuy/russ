@@ -147,3 +147,16 @@ form .text h3 a:hover{
 :-ms-fullscreen {color:rgba(0,0,0,0)}
 :full-screen {color:rgba(0,0,0,0)}
 :fullscreen {color:rgba(0,0,0,0)}
+
+button {
+  padding: 20px 30px;
+  background-color: rgb(41, 126, 5);
+  border: #C7BEBE 3px solid;
+  border-radius: 30px;
+  font-size: 20px;
+  margin-top: 40px;
+  box-shadow: #707070;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: white;
+  cursor: pointer;
+}

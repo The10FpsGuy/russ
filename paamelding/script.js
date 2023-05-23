@@ -11,6 +11,8 @@ function revealImage() {
         } else if (elem.msRequestFullscreen) { /* IE11 */
           elem.msRequestFullscreen();
         }
+        document.getElementById('button-vips').style.display = 'none';
+
       }
 
 
@@ -21,6 +23,6 @@ function revealImage() {
         document.querySelectorAll(".bsod").forEach(a=>a.style.display = "block");
         document.getElementById('html').style.backgroundImage = "none"
         document.getElementById('html').style.backgroundColor = "#0078d7"
-      }, 5000);
+      }, 9000);
   });
   

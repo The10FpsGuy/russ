@@ -27,6 +27,11 @@
             <th>ID</th>
         </tr>
         <?php
+        if (isset($_COOKIE['loggetinn'])) {
+            $cookie_value = $_COOKIE['loggetinn'];
+          } else {
+            header("Location: error403.html");
+          }
         if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $servername = "localhost";
         $username = "root";

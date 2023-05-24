@@ -9,9 +9,8 @@
     <?php
     if (isset($_COOKIE['loggetinn'])) {
         $cookie_value = $_COOKIE['loggetinn'];
-        echo "";
       } else {
-        header("Location ../index.html");
+        header("Location: error403.html");
       }
         $servername = "localhost";
         $username = "root";
@@ -33,6 +32,7 @@
     <form action="#" method="POST">
         <input name="id" type="number" placeholder="Skriv id her">
     </form>
+    <h4>Du kan også bla gjennom lister <a href="lister.php">her</a>, over hvem som har betalt og hvem som ikke har betalt</h4>
     <table>
         <tr>
             <th>Fornavn</th>
@@ -83,9 +83,8 @@
 
         $sql = "UPDATE personer SET betalt='True' WHERE id=$id";
         if ($conn->query($sql) === TRUE) {
-            sleep(3);
-            header("Location: admin.php");
             echo "<h2>Betalingen har blitt registrert</h2>";
+            sleep(3);
 
           } else {
             echo "Error updating record: " . $conn->error;

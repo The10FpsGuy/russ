@@ -29,9 +29,7 @@ $username = "root";
 $password = "";
 $dbname = "russ";
 
-// Create connection
 $conn = new mysqli($servername, $username, $password, $dbname);
-// Check connection
 if ($conn->connect_error) {
   die("Connection failed: " . $conn->connect_error);
 }
@@ -45,7 +43,7 @@ $sql = "INSERT INTO admin (username, password) VALUES ('$username', '$password')
 if (mysqli_query($conn, $sql)) {
   sleep(5);
   header("Location: logginn.php");
-  exit(); // Make sure to include this to stop the script from executing further
+  exit();
 } else {
   echo "Error: " . $sql . "<br>" . mysqli_error($conn);
 }

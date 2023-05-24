@@ -48,7 +48,6 @@
     font-size: 20px;
     }
 
-    /*Resize the wrap to see the search bar change!*/
     .wrap{
     width: 30%;
     position: absolute;
@@ -90,9 +89,7 @@
       
             $etternavn = $_POST['etternavn'];
       
-              // Create connection
               $conn = new mysqli($servername, $username, $password, $dbname);
-              // Check connection
               if ($conn->connect_error) {
               die("Connection failed: " . $conn->connect_error);
               }

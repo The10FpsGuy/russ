@@ -16,8 +16,8 @@ $etternavn = $_POST['etternavn'];
 $epost = $_POST['epost'];
 $tlf = $_POST['tlf'];
 
-$sql = "INSERT INTO personer (fornavn, etternavn, epost, tlf)
-VALUES ('$fornavn', '$etternavn', '$epost', '$tlf')";
+$sql = "INSERT INTO personer (fornavn, etternavn, epost, tlf, betalt)
+VALUES ('$fornavn', '$etternavn', '$epost', '$tlf', 'False')";
 
 if ($conn->query($sql) === TRUE) {
     header("Location: success.html");

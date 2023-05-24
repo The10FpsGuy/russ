@@ -14,6 +14,7 @@
             <input name="username" type="text" placeholder="name"/>
             <input name="password" type="password" placeholder="password"/>
             <button>Lag Bruker</button>
+            <p>Har du allerede bruker? <a href="logginn.php">Logg inn her</a></p>
           </form>
         </div>
       </div>

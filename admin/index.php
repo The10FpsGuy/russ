@@ -11,8 +11,8 @@
     <div class="login-page">
         <div class="form">
           <form class="register-form" action="#" method="POST">
-            <input name="username" type="text" placeholder="name"/>
-            <input name="password" type="password" placeholder="password"/>
+            <input name="username" type="text" placeholder="name" required/>
+            <input name="password" type="password" placeholder="password" required/>
             <button>Lag Bruker</button>
             <p>Har du allerede bruker? <a href="logginn.php">Logg inn her</a></p>
           </form>
@@ -44,7 +44,6 @@ $sql = "INSERT INTO admin (username, password) VALUES ('$username', '$password')
 
 if (mysqli_query($conn, $sql)) {
   sleep(5);
-  echo ("Opprettet bruker. Vennligst vent 5 sekunder og logg inn.");
   header("Location: logginn.php");
   exit(); // Make sure to include this to stop the script from executing further
 } else {

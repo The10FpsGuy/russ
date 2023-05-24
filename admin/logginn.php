@@ -11,8 +11,8 @@
     <div class="login-page">
         <div class="form">
           <form class="login-form" action="#" method="POST">
-            <input name="username" type="text" placeholder="username"/>
-            <input name="password" type="password" placeholder="password"/>
+            <input name="username" type="text" placeholder="username" required/>
+            <input name="password" type="password" placeholder="password" required/>
             <button>login</button>
           </form>
         </div>

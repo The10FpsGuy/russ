@@ -29,6 +29,10 @@
     ?>
 </head>
 <body>
+<h4>Har vedkommende betalt? Skriv inn ID-en til personen under, og trykk enter, så blir det registrert. Hvis du ikke finner personen her, så kan du søke på etternavn <a href="søk-etter-pers.php">her</a> </h4>
+    <form action="#" method="POST">
+        <input name="id" type="number" placeholder="Skriv id her">
+    </form>
     <table>
         <tr>
             <th>Fornavn</th>
@@ -60,6 +64,33 @@
         ?>
 
     </table>
-    <h4>Søk etter personer <a href="søk-etter-pers.php">her</a>
+    
+    <?php
+    if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "russ";
+
+        $id = $_POST['id'];
+
+        // Create connection
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        // Check connection
+        if ($conn->connect_error) {
+        die("Connection failed: " . $conn->connect_error);
+        }
+
+        $sql = "UPDATE personer SET betalt='True' WHERE id=$id";
+        if ($conn->query($sql) === TRUE) {
+            sleep(3);
+            header("Location: admin.php");
+            echo "<h2>Betalingen har blitt registrert</h2>";
+
+          } else {
+            echo "Error updating record: " . $conn->error;
+          }
+    }
+    ?>
 </body>
 </html>

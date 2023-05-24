@@ -23,7 +23,7 @@
 
     .searchTerm {
     width: 100%;
-    border: 3px solid #00B4CC;
+    border: 3px solid black;
     border-right: none;
     padding: 5px;
     height: 40px;

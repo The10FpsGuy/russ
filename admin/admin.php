@@ -84,7 +84,7 @@
         $sql = "UPDATE personer SET betalt='True' WHERE id=$id";
         if ($conn->query($sql) === TRUE) {
             echo "<h2>Betalingen har blitt registrert</h2>";
-            sleep(3);
+            echo "<h2>For å se oppdateringen må du laste inn vinduet på nytt</h2>";
 
           } else {
             echo "Error updating record: " . $conn->error;
